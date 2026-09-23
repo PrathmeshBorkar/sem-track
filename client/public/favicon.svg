@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#060E20"/>
+    </linearGradient>
+    <linearGradient id="favGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#6366F1" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Container Icon Background with crisp border -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#favBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Inner Glyph Badge -->
+  <rect x="10" y="10" width="44" height="44" rx="10" fill="url(#favGlow)" filter="url(#subtleShadow)"/>
+
+  <!-- Academic Grade "A" / Apex Chevron Mark -->
+  <path d="M23 37L32 21L41 37M26.5 32H37.5" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Quantum Target / Notification Dot -->
+  <circle cx="41" cy="19" r="4" fill="#38BDF8" stroke="#0F172A" stroke-width="1.5"/>
+</svg>

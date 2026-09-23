@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#4cd7f6","on-primary-fixed":"#07006c","on-secondary-container":"#c4abff","surface-container-lowest":"#060e20","on-primary-fixed-variant":"#2f2ebe","background":"#0b1326","on-secondary-fixed-variant":"#5516be","secondary":"#d0bcff","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#004e5c","inverse-surface":"#dae2fd","surface-variant":"#2d3449","surface":"#0b1326","on-secondary":"#3c0091","surface-tint":"#c0c1ff","surface-container-high":"#222a3d","on-surface":"#dae2fd","on-primary":"#1000a9","secondary-fixed-dim":"#d0bcff","surface-container-low":"#131b2e","tertiary-container":"#009eb9","inverse-on-surface":"#283044","primary-container":"#8083ff","secondary-fixed":"#e9ddff","surface-dim":"#0b1326","outline-variant":"#464554","tertiary-fixed":"#acedff","tertiary-fixed-dim":"#4cd7f6","on-tertiary":"#003640","secondary-container":"#571bc1","on-primary-container":"#0d0096","surface-container":"#171f33","on-surface-variant":"#c7c4d7","error":"#ffb4ab","primary-fixed":"#e1e0ff","surface-bright":"#31394d","primary":"#c0c1ff","on-tertiary-container":"#002f38","primary-fixed-dim":"#c0c1ff","inverse-primary":"#494bd6","on-tertiary-fixed":"#001f26","on-error":"#690005","error-container":"#93000a","surface-container-highest":"#2d3449","on-secondary-fixed":"#23005c","on-background":"#dae2fd","outline":"#908fa0"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2rem","space-md":"0.75rem","margin-desktop":"2rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"1rem","gutter":"1rem","space-lg":"1.25rem"},fontFamily:{"display-lg-mobile":["Geist"],"headline-lg-mobile":["Geist"],"label-md":["JetBrains Mono"],"body-lg":["Geist"],"headline-lg":["Geist"],"body-md":["Geist"],"label-sm":["JetBrains Mono"],"display-lg":["Geist"],"headline-md":["Geist"],"code-inline":["JetBrains Mono"]},fontSize:{"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"body-lg":["15px",{lineHeight:"22px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["13px",{lineHeight:"19px",letterSpacing:"0em",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"26px",letterSpacing:"-0.015em",fontWeight:"500"}],"code-inline":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-sm py-space-xs"><img alt="Brand logo. - Primary color: #6366f1
+- Font: geist
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WBOpXQE8k2eTEVbFS1tcnZPpFTdCzQ8_NC7oXAqqOoIXytnaTXR1R-fSnSaC3AlANsSpEXvueCnBg_qO0YcsdQUO3Bjxhr2nBo2Jx9p22TGUOLnMvj1hqM7RUZtD6dGgZRSngzt4x1r9nBPZ_LpbO1bVjyJOahB5pwyNf8XPseYjTNTKK5-jRA8gYF4q26dm93DvVL9o5XvYMg9hN8tAbBjjdD3bCgAI_Ku6k8JB2npVjZSWLOqUeQc-U"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold tracking-tight text-on-surface">SemTrack</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Academic OS</span></div></div><div class="px-space-sm pt-space-xs"><span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-medium tracking-wider">Academic Space</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-headline-md text-headline-md font-medium shadow-[0_1px_8px_rgba(0,0,0,0.1)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl transition-colors bg-surface-container-highest text-on-surface font-headline-md text-headline-md font-medium shadow-[0_1px_8px_rgba(0,0,0,0.1)]" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="course-matrix" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Course Matrix</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="deadlines-and-exams" href="#"><span class="material-symbols-outlined text-[18px]">event_upcoming</span><span>Deadlines & Exams</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="syllabus-parser" href="#"><span class="material-symbols-outlined text-[18px]">document_scanner</span><span>Syllabus Parser</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gpa-forecaster" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span>GPA Forecaster</span></a></nav></div><div class="flex flex-col gap-space-xs pt-space-md"><div class="px-space-sm py-space-xs rounded-xl bg-surface-container/60 backdrop-blur-md flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Term System</span><span class="font-code-inline text-code-inline text-tertiary">Fall 2024 • W8</span></div><div class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(76,215,246,0.6)]"></div></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex-1 max-w-xl"><div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><span class="font-body-md text-body-md flex-1 text-on-surface-variant">Search courses, assignments, or commands...</span><kbd class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface px-space-xs py-0.5 rounded">Cmd K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs"><button aria-label="Quick log" class="p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">add_task</span></button><button aria-label="Telemetry alerts" class="p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button></div><div class="h-6 w-[1px] bg-surface-variant hidden sm:block"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col items-end hidden md:flex"><span class="font-label-md text-label-md font-medium text-on-surface">Julian Sterling</span><span class="font-label-sm text-label-sm text-primary">B.S. Comp Sci</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1WrhLqlUE73qXoFUFpJGHsmU5ZHznP2mEG7ajZogQnPAI_3Gx1VwHzzsVId9w05InI2gXmSgWxbVI-TE7XAr6AtNSRbDlMgj700CW76pPm6Gw99CKZdhI8-b61tkDdx-MF5X0NiaHo4-T_Gcgdwdk3v56Zqw5wKh_xHJp_21hFfCVxgaYccNQKxO8eeKB1iu724HWjmFIUdHtkIJ-XVP6bFQWoPWR8-m8n5fC-OopLajYy9nttFAMYys5Uj"/></div></div></div></header><main class="w-full pt-16 flex-1 px-gutter-desktop py-space-lg bg-background"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXT / BREADCRUMB & TELEMETRY ROW -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Academic Intelligence</span>
+<span class="font-label-sm text-label-sm text-outline">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Semester 5</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">B.S. Computer Science</span>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<h1 class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight">Performance Matrix & Telemetry</h1>
+<div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">Sync Engine Online</span>
+</div>
+</div>
+</div>
+<!-- Quick Action / Utilities -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">download</span>
+<span class="font-label-md text-label-md">Audit Report</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">camera</span>
+<span class="font-label-md text-label-md">Snapshot</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded bg-primary hover:bg-primary-container text-on-primary font-medium transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="font-label-md text-label-md">Configure Weights</span>
+</button>
+</div>
+</div>
+<!-- HERO GRADE MATRIX SECTION -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Hero Card: Radial Gauge SGPA Telemetry (5 cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container/80 backdrop-blur-md p-space-lg flex flex-col justify-between shadow-xl relative overflow-hidden">
+<!-- Glow ambient background spot -->
+<div class="absolute -top-12 -left-12 w-48 h-48 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -right-12 w-48 h-48 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">speed</span>
+<span class="font-label-md text-label-md font-semibold uppercase tracking-wider text-on-surface">Term Run-Rate SGPA</span>
+</div>
+<div class="flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="font-label-sm text-label-sm font-medium">+0.15 vs Sem 4</span>
+</div>
+</div>
+<!-- Center Gauge Graphic & Stat -->
+<div class="flex flex-col sm:flex-row items-center justify-around py-space-md gap-space-md relative z-10">
+<div class="relative flex items-center justify-center">
+<!-- SVG Circular Meter -->
+<svg class="w-44 h-44 -rotate-90" viewbox="0 0 160 160">
+<circle class="stroke-surface-container-highest" cx="80" cy="80" fill="transparent" r="68" stroke-width="8"></circle>
+<circle class="stroke-primary" cx="80" cy="80" fill="transparent" r="68" stroke-dasharray="427.25" stroke-dashoffset="54.68" stroke-linecap="round" stroke-width="8" style="filter: drop-shadow(0 0 6px rgba(192, 193, 255, 0.45));"></circle>
+<circle class="stroke-surface-container-highest" cx="80" cy="80" fill="transparent" opacity="0.4" r="54" stroke-dasharray="339.29" stroke-dashoffset="100" stroke-width="4"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Current</span>
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tighter">8.72</span>
+<span class="font-code-inline text-code-inline text-outline">/ 10.00</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm w-full sm:w-auto">
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-outline block">Cohort Percentile</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-semibold text-tertiary">Top 4.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rank #6</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-outline block">Honor Target</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-semibold text-secondary">9.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Magna Cum Laude</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer run-rate progression indicator -->
+<div class="pt-space-md mt-space-xs bg-surface-container-lowest/40 p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<span class="font-body-md text-body-md text-on-surface-variant">Graded Weight Incurred</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-28 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-[78%] h-full bg-tertiary rounded-full"></div>
+</div>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">78%</span>
+</div>
+</div>
+</div>
+<!-- Right Quick Stats & Actions Grid (7 cols) -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Stat 1: Credits Completed -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Credits Accrued</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">school</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">16</span>
+<span class="font-headline-md text-headline-md text-outline font-normal">/ 22</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">6 In-Flight this term</span>
+</div>
+<div class="flex gap-1 pt-space-xs">
+<div class="h-1.5 flex-1 rounded bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded bg-tertiary"></div>
+<div class="h-1.5 flex-1 rounded bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Stat 2: Pending Assessments -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Pending Tests</span>
+<div class="w-2 h-2 rounded-full bg-secondary animate-ping"></div>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-secondary">3</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">2 Critical due < 48 hrs</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-code-inline text-code-inline">CS401</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-code-inline text-code-inline">CS402</span>
+</div>
+</div>
+<!-- Stat 3: Rank Position -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-md p-space-md flex flex-col justify-between shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Dept Standing</span>
+<span class="material-symbols-outlined text-[18px] text-primary">leaderboard</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">#6</span>
+<span class="font-body-md text-body-md text-outline">of 142</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Dept of Computer Sci</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Dean's List Eligible</span>
+</div>
+</div>
+<!-- Action Card / Interactive Banner (Spans 3 cols) -->
+<div class="sm:col-span-3 rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-xl relative overflow-hidden">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] text-primary">calculate</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md font-semibold text-on-surface">Interactive What-If Grade Forecaster</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary/20 text-secondary font-code-inline text-[10px] uppercase tracking-wider">v2.4 Engine</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Model expected Endsem grade distributions against overall cumulative CGPA impact in real time.</p>
+</div>
+</div>
+<button class="flex items-center gap-space-sm px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary shadow-lg transition-all shrink-0" type="button">
+<span class="font-label-md text-label-md font-semibold">Simulate Scenarios</span>
+<kbd class="font-code-inline text-[11px] bg-on-primary-container/40 text-on-primary px-1.5 py-0.5 rounded">Cmd S</kbd>
+</button>
+</div>
+</div>
+</div>
+<!-- ACTIVE COURSES MATRIX (3-COLUMN HIGH-DENSITY GRID) -->
+<div class="flex flex-col gap-space-md pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">grid_view</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Curricular Matrix</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm">6 Active Modules</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">filter_list</span></button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Course 1: Distributed Systems -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-code-inline text-code-inline font-medium">CS401</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">4 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary font-code-inline text-code-inline font-medium">88.5% • GP 9.0</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Distributed Systems</h3>
+<span class="font-body-md text-body-md text-outline">Dr. Julian Sterling • Core Major</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">75%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-3/4 h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">CCA1: <strong class="text-on-surface">14/15</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Midsem: <strong class="text-on-surface">27/30</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-secondary">Lab Viva: <strong class="text-secondary">Pending</strong></span>
+</div>
+</div>
+<!-- Course 2: Compiler Design -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-code-inline text-code-inline font-medium">CS402</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">4 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary font-code-inline text-code-inline font-medium">84.0% • GP 8.5</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Compiler Design</h3>
+<span class="font-body-md text-body-md text-outline">Prof. Elena Rostova • Core Major</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">60%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-3/5 h-full bg-tertiary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">CCA1: <strong class="text-on-surface">13/15</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Midsem: <strong class="text-on-surface">25/30</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-secondary">AST Proj: <strong class="text-secondary">Review</strong></span>
+</div>
+</div>
+<!-- Course 3: Advanced Database Architectures -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-code-inline text-code-inline font-medium">CS403</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">3 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-code-inline text-code-inline font-semibold">92.0% • GP 10.0</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Advanced Database Arch</h3>
+<span class="font-body-md text-body-md text-outline">Dr. Marcus Vance • Specialization</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">80%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-4/5 h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">CCA1: <strong class="text-on-surface">15/15</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Midsem: <strong class="text-on-surface">29/30</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-tertiary">Indexing: <strong class="text-tertiary">Graded</strong></span>
+</div>
+</div>
+<!-- Course 4: Cloud Computing Lab -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-tertiary font-code-inline text-code-inline font-medium">CS404P</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">2 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-code-inline text-code-inline font-semibold">95.0% • GP 10.0</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Cloud & DevOps Lab</h3>
+<span class="font-body-md text-body-md text-outline">Lab Faculty Group • Practical</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">85%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-[85%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Labs 1-8: <strong class="text-on-surface">10/10</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">CI/CD Viva: <strong class="text-on-surface">19/20</strong></span>
+</div>
+</div>
+<!-- Course 5: Computer Networks & Security -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-code-inline text-code-inline font-medium">CS405</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">3 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary font-code-inline text-code-inline font-medium">86.5% • GP 8.5</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Networks & Security</h3>
+<span class="font-body-md text-body-md text-outline">Prof. K. Arisawa • Core Major</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">70%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-[70%] h-full bg-tertiary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">CCA1: <strong class="text-on-surface">13.5/15</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Midsem: <strong class="text-on-surface">26/30</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-secondary">Packet Lab: <strong class="text-secondary">Due Fri</strong></span>
+</div>
+</div>
+<!-- Course 6: Capstone Project Phase I -->
+<div class="rounded-xl bg-surface-container/75 hover:bg-surface-container-high/80 transition-all p-space-md flex flex-col justify-between gap-space-md shadow-md group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-secondary font-code-inline text-code-inline font-medium">CS406P</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">2 Cr</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-code-inline text-code-inline font-semibold">91.0% • GP 9.5</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-medium text-on-surface group-hover:text-primary transition-colors">Capstone Project Phase I</h3>
+<span class="font-body-md text-body-md text-outline">Advisor: Dr. Sterling • Research Track</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grading Completed</span>
+<span class="font-code-inline text-code-inline text-on-surface font-medium">50%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="w-1/2 h-full bg-secondary rounded-full"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1.5 font-code-inline text-code-inline">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-on-surface-variant">Arch Spec: <strong class="text-on-surface">18/20</strong></span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-primary">Sprint 2 Demo: <strong class="text-primary">Nov 12</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- DELIVERABLES & DEADLINES TABLE (HIGH-DENSITY LINEAR WORKBENCH) -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-md p-space-md shadow-xl flex flex-col gap-space-md">
+<!-- Header with tab filtering -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary">alarm</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Upcoming Deliverables & Milestones</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-inline text-code-inline">7 queued</span>
+</div>
+<div class="flex items-center gap-1 p-0.5 rounded-lg bg-surface-container-highest">
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-low text-on-surface font-medium shadow-sm" type="button">All (7)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Critical (2)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Exams (1)</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Labs (4)</button>
+</div>
+</div>
+<!-- Rows container -->
+<div class="flex flex-col divide-y divide-surface-variant/40">
+<!-- Item 1: Overdue -->
+<div class="flex flex-col md:flex-row md:items-center justify-between py-space-sm gap-space-sm hover:bg-surface-container-high/50 px-space-sm rounded transition-colors group">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container text-error shrink-0">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Overdue</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-[14px] font-medium text-on-surface">Syntax Tree AST Generator Submission</span>
+<span class="font-code-inline text-code-inline text-outline">CS402</span>
+</div>
+<span class="font-body-md text-body-md text-error">Due Yesterday, 11:59 PM • Late submission penalty applies (-5%/day)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-sm py-1 rounded bg-error/20 hover:bg-error/30 text-error font-label-sm text-label-sm font-semibold transition-colors" type="button">
+            Submit Late (-5%)
+          </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Due Today (High Priority) -->
+<div class="flex flex-col md:flex-row md:items-center justify-between py-space-sm gap-space-sm hover:bg-surface-container-high/50 px-space-sm rounded transition-colors group">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-secondary shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Due Today</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-[14px] font-medium text-on-surface">Raft Consensus Cluster Implementation Report</span>
+<span class="font-code-inline text-code-inline text-outline">CS401</span>
+</div>
+<span class="font-body-md text-body-md text-secondary">Due Today, 5:00 PM • Approx. 3 hours 20 mins remaining</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-md py-1 rounded bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-medium transition-colors shadow-sm" type="button">
+            Submit Portal ↗
+          </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Due Tonight -->
+<div class="flex flex-col md:flex-row md:items-center justify-between py-space-sm gap-space-sm hover:bg-surface-container-high/50 px-space-sm rounded transition-colors group">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container/60 text-secondary shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Due Today</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-[14px] font-medium text-on-surface">Wireshark Packet Inspection Lab 4</span>
+<span class="font-code-inline text-code-inline text-outline">CS405</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Due Today, 11:59 PM • PCAP capture file required</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-md py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+            Submit Portal ↗
+          </button>
+</div>
+</div>
+<!-- Item 4: Upcoming -->
+<div class="flex flex-col md:flex-row md:items-center justify-between py-space-sm gap-space-sm hover:bg-surface-container-high/50 px-space-sm rounded transition-colors group">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-tertiary shrink-0">
+<span class="font-label-sm text-label-sm font-medium uppercase tracking-wider">Upcoming</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-[14px] font-medium text-on-surface">Terraform Kubernetes Deployment Script</span>
+<span class="font-code-inline text-code-inline text-outline">CS404P</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Thursday, Nov 02 • 11:59 PM • Automated GitHub Actions test</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-md py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+            View Instructions
+          </button>
+</div>
+</div>
+<!-- Item 5: Project Dossier -->
+<div class="flex flex-col md:flex-row md:items-center justify-between py-space-sm gap-space-sm hover:bg-surface-container-high/50 px-space-sm rounded transition-colors group">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant shrink-0">
+<span class="font-label-sm text-label-sm font-medium uppercase tracking-wider">Upcoming</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-md text-[14px] font-medium text-on-surface">Milestone 2 Architecture Dossier & Video Demo</span>
+<span class="font-code-inline text-code-inline text-outline">CS406P</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Monday, Nov 06 • 10:00 AM • Review committee panel presentation</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-md py-1 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+            Review Rubric
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- FOOTER INTEL STRIP -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Model Engine: SemTrack-v5 • Confidence Interval ±0.04 GP</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-outline">Last recalculation: 4 minutes ago</span>
+<a class="text-primary hover:underline" href="#">Telemetry History</a>
+</div>
+</div>
+</div></main></div></body></html>

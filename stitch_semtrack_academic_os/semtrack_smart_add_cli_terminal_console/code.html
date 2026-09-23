@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#d0bcff", "on-background": "#dae2fd", "tertiary-fixed-dim": "#4cd7f6", "tertiary-fixed": "#acedff", "on-primary-fixed": "#07006c", "surface-variant": "#2d3449", "inverse-surface": "#dae2fd", "primary-fixed": "#e1e0ff", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#d0bcff", "surface-container-low": "#131b2e", "surface-bright": "#31394d", "surface-container-highest": "#2d3449", "primary-container": "#8083ff", "outline-variant": "#464554", "on-tertiary": "#003640", "secondary-fixed": "#e9ddff", "on-secondary-fixed": "#23005c", "surface": "#0b1326", "on-error": "#690005", "surface-dim": "#0b1326", "primary": "#c0c1ff", "secondary-container": "#571bc1", "on-secondary-fixed-variant": "#5516be", "on-tertiary-fixed-variant": "#004e5c", "tertiary": "#4cd7f6", "on-primary-container": "#0d0096", "error": "#ffb4ab", "surface-tint": "#c0c1ff", "outline": "#908fa0", "on-error-container": "#ffdad6", "background": "#0b1326", "surface-container-high": "#222a3d", "inverse-primary": "#494bd6", "error-container": "#93000a", "primary-fixed-dim": "#c0c1ff", "on-surface": "#dae2fd", "on-tertiary-fixed": "#001f26", "on-secondary": "#3c0091", "surface-container": "#171f33", "surface-container-lowest": "#060e20", "on-primary-fixed-variant": "#2f2ebe", "on-secondary-container": "#c4abff", "tertiary-container": "#009eb9", "inverse-on-surface": "#283044", "on-tertiary-container": "#002f38", "on-primary": "#1000a9" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-md": "0.75rem", "margin-desktop": "2rem" }, fontFamily: { "label-sm": ["JetBrains Mono"], "display-lg": ["Geist"], "headline-md": ["Geist"], "body-md": ["Geist"], "code-inline": ["JetBrains Mono"], "body-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "label-md": ["JetBrains Mono"], "headline-lg": ["Geist"], "display-lg-mobile": ["Geist"] }, fontSize: { "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "400" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.015em", fontWeight: "500" }], "body-md": ["13px", { lineHeight: "19px", letterSpacing: "0em", fontWeight: "400" }], "code-inline": ["12px", { lineHeight: "16px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["15px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "display-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface/85 backdrop-blur-xl border-b border-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="SemTrack Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WBOpXQE8k2eTEVbFS1tcnZPpFTdCzQ8_NC7oXAqqOoIXytnaTXR1R-fSnSaC3AlANsSpEXvueCnBg_qO0YcsdQUO3Bjxhr2nBo2Jx9p22TGUOLnMvj1hqM7RUZtD6dGgZRSngzt4x1r9nBPZ_LpbO1bVjyJOahB5pwyNf8XPseYjTNTKK5-jRA8gYF4q26dm93DvVL9o5XvYMg9hN8tAbBjjdD3bCgAI_Ku6k8JB2npVjZSWLOqUeQc-U"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">SemTrack</span></div><div class="hidden sm:flex items-center px-space-xs py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm border border-outline-variant/40"><span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-1.5 animate-pulse"></span>OS v2.4</div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest/80 border border-surface-variant" data-active-classes="bg-surface-container-high text-primary font-body-md text-body-md shadow-inner shadow-primary-container/20"><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="subjects" href="#">Subjects</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines" href="#">Deadlines</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="smart-add" href="#">Smart Add</a></nav><div class="flex items-center gap-space-sm"><button class="group relative hidden sm:flex items-center gap-space-xs h-8 px-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-body-md text-body-md font-medium shadow-[0_0_16px_rgba(128,131,255,0.35)] hover:shadow-[0_0_24px_rgba(128,131,255,0.55)] transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Add</span><kbd class="ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/40 text-on-surface font-label-sm text-label-sm border border-outline-variant/40">⌘K</kbd></button><button class="relative flex items-center justify-center w-8 h-8 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs py-1 pr-space-md rounded-full bg-surface-container border border-surface-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-5ApA5KW5pyr2I01_oTBa52M2O-B5nAVJnFq3cRQdB2BPzukUaBw4C_XS9xDrMbSP8y7oNZ-hrQvLNpJ3c3TPsuPiQA0slISBS-UYmg4arVPIDhPv1X5IaBkqjIWoguljfoY0ZHEhXr0B0rtcRQoItRNXnxHEj6do9sx14ca35U1boxsaDDMlKJvKXY30OG0eENyUR_bUjxz8c6GBS0bpc6yVUhwRCOXJr-Vy57V95f_W5d8Z7e4DAg"/><div class="hidden md:flex flex-col text-left"><span class="font-body-md text-body-md leading-none text-on-surface">Kaelen Vance</span><span class="font-label-sm text-label-sm leading-none text-secondary mt-1">Sem 5 • CSE</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-surface-variant z-40 flex flex-col justify-between p-space-md"><div class="space-y-space-lg"><div><span class="px-space-sm font-label-sm text-label-sm tracking-wider uppercase text-outline">Academic Space</span><nav class="mt-space-sm space-y-1" data-active-classes="bg-surface-container-high text-primary font-medium"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="subjects" href="#"><span class="material-symbols-outlined text-[18px]">auto_stories</span><span class="font-body-md text-body-md">Course Matrix</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines" href="#"><span class="material-symbols-outlined text-[18px]">timer</span><span class="font-body-md text-body-md">Deadlines &amp; Exams</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="smart-add" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-body-md text-body-md">Syllabus Parser</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="gpa-forecaster" href="#"><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md">GPA Forecaster</span></a></nav></div><div><span class="px-space-sm font-label-sm text-label-sm tracking-wider uppercase text-outline">Telemetry</span><div class="mt-space-sm p-space-sm rounded-xl bg-surface-container border border-surface-variant space-y-space-sm"><div class="flex justify-between items-center"><span class="font-label-sm text-label-sm text-on-surface-variant">Target CGPA</span><span class="font-label-sm text-label-sm text-tertiary font-bold">3.88 / 4.00</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-primary to-tertiary w-[92%]"></div></div><div class="flex justify-between items-center pt-1 font-label-sm text-label-sm text-outline"><span>Credits</span><span class="text-on-surface">94 / 130</span></div></div></div></div><div class="p-space-sm rounded-xl bg-surface-container/60 border border-surface-variant/80 flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sync Engine</span></div><span class="font-label-sm text-label-sm text-primary">Online</span></div></aside><div class="pl-64"><main class="w-full pt-16 min-h-screen bg-surface px-gutter-desktop py-space-xl"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Navigation & Context Bar -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>Back to Dashboard</span>
+</a>
+<!-- Telemetry Status Pills -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="text-tertiary font-medium">NLP Engine v2.4</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">Active</span>
+</div>
+<div class="hidden sm:inline-flex items-center gap-1 px-space-md py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">memory</span>
+<span>Compromise + DayJS Evaluator</span>
+</div>
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="font-code-inline text-code-inline text-secondary-fixed-dim">18ms</span>
+<span class="text-outline">latency</span>
+</div>
+</div>
+</div>
+<!-- Header Content & Hero Title -->
+<div class="flex flex-col gap-space-xs mt-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Smart Add CLI Console</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm tracking-wide shadow-sm">
+          v2.4 Natural Language Parser
+        </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+        Ingest raw semester syllabi, grading schemes, and deadlines through conversational and structured terminal commands with zero manual form entry.
+      </p>
+</div>
+</div>
+<!-- macOS-Style Interactive Terminal Window -->
+<div class="w-full rounded-xl bg-surface-container-lowest shadow-2xl overflow-hidden flex flex-col relative group">
+<!-- Terminal Titlebar -->
+<div class="h-11 bg-surface-container-low px-space-md flex items-center justify-between select-none">
+<!-- Traffic Lights -->
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#EF4444] shadow-[0_0_8px_rgba(239,68,68,0.5)] cursor-pointer hover:opacity-80 transition-opacity"></span>
+<span class="w-3 h-3 rounded-full bg-[#F59E0B] shadow-[0_0_8px_rgba(245,158,11,0.5)] cursor-pointer hover:opacity-80 transition-opacity"></span>
+<span class="w-3 h-3 rounded-full bg-[#10B981] shadow-[0_0_8px_rgba(16,185,129,0.5)] cursor-pointer hover:opacity-80 transition-opacity"></span>
+</div>
+<!-- Center Title -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">terminal</span>
+<span class="tracking-wide">semtrack-cli --smart-add v2.4.1 (zsh/fish)</span>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-space-xs">
+<button class="hidden sm:inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-secondary-fixed-dim hover:text-on-surface font-label-sm text-label-sm transition-colors shadow-sm" id="load-example-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Load Example</span>
+</button>
+<button class="inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error font-label-sm text-label-sm transition-colors shadow-sm" id="clear-buffer-btn" title="Clear Buffer" type="button">
+<span class="material-symbols-outlined text-[14px]">delete</span>
+<span class="hidden md:inline">Clear</span>
+</button>
+<button class="hidden md:inline-flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container text-outline font-label-sm text-label-sm" type="button">
+<span>Ctrl+R</span>
+</button>
+</div>
+</div>
+<!-- Terminal Interior & Code Lines -->
+<div class="p-space-lg bg-surface-container-lowest font-label-md text-label-md text-on-surface relative overflow-x-auto min-h-[220px]">
+<!-- Line 1 -->
+<div class="flex items-start gap-space-md leading-6 py-0.5">
+<span class="text-outline-variant font-code-inline text-code-inline select-none w-6 text-right">01</span>
+<div class="flex items-baseline gap-space-xs flex-1">
+<span class="text-primary select-none font-bold">❯</span>
+<span class="text-tertiary">Add</span>
+<span class="text-on-surface font-medium">DBMS</span>
+<span class="text-secondary">(CS301)</span>
+<span class="text-on-surface-variant">theory, 4 credits,</span>
+<span class="text-tertiary-fixed">Prof. Aris Thorne</span>
+</div>
+</div>
+<!-- Line 2 -->
+<div class="flex items-start gap-space-md leading-6 py-0.5">
+<span class="text-outline-variant font-code-inline text-code-inline select-none w-6 text-right">02</span>
+<div class="flex items-baseline gap-space-xs flex-1">
+<span class="text-primary select-none font-bold">❯</span>
+<span class="text-tertiary">Marking:</span>
+<span class="text-on-surface">CCA1/15,</span>
+<span class="text-on-surface">Midsem/30,</span>
+<span class="text-on-surface">CCA2/15,</span>
+<span class="text-on-surface">Endsem/40</span>
+<span class="text-tertiary font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-tertiary-container/30 text-tertiary-fixed ml-2">[Valid 100%]</span>
+</div>
+</div>
+<!-- Line 3 -->
+<div class="flex items-start gap-space-md leading-6 py-0.5">
+<span class="text-outline-variant font-code-inline text-code-inline select-none w-6 text-right">03</span>
+<div class="flex items-baseline gap-space-xs flex-1">
+<span class="text-primary select-none font-bold">❯</span>
+<span class="text-tertiary">Deadline:</span>
+<span class="text-primary-fixed">DBMS Schema &amp; Normalization Benchmark</span>
+<span class="text-on-surface-variant">on</span>
+<span class="text-secondary">28 Oct 23:59</span>
+</div>
+</div>
+<!-- Line 4 -->
+<div class="flex items-start gap-space-md leading-6 py-0.5">
+<span class="text-outline-variant font-code-inline text-code-inline select-none w-6 text-right">04</span>
+<div class="flex items-baseline gap-space-xs flex-1">
+<span class="text-primary select-none font-bold">❯</span>
+<span class="text-tertiary">Deadline:</span>
+<span class="text-primary-fixed">Midsem Theory Exam</span>
+<span class="text-on-surface-variant">on</span>
+<span class="text-secondary">14 Nov 09:00</span>
+<span class="text-outline font-label-sm text-label-sm ml-1">(Weight: 30%)</span>
+</div>
+</div>
+<!-- Line 5: Interactive input field simulator with blinking cursor -->
+<div class="flex items-center gap-space-md leading-6 py-0.5">
+<span class="text-outline-variant font-code-inline text-code-inline select-none w-6 text-right">05</span>
+<div class="flex items-center gap-space-xs flex-1">
+<span class="text-tertiary select-none font-bold">❯</span>
+<input class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none w-full placeholder-outline/60" placeholder="Type additional syntax (e.g. 'Lab component: 20% on Thursdays')" type="text" value=""/>
+<span class="inline-block w-2 h-4 bg-tertiary animate-pulse ml-0.5"></span>
+</div>
+</div>
+</div>
+<!-- Terminal Footer Status & Execution Bar -->
+<div class="bg-surface-container-low px-space-lg py-space-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>4 statements lexed</span>
+</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">0 grammar collisions</span>
+<span class="text-outline-variant">•</span>
+<span class="text-secondary">Confidence: 99.4%</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="hidden lg:inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span>Hotkeys:</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">⌘ + Enter</kbd>
+</span>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2 rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-body-md text-body-md font-medium shadow-[0_0_20px_rgba(128,131,255,0.4)] hover:shadow-[0_0_28px_rgba(128,131,255,0.65)] hover:scale-[1.02] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Parse &amp; Compile Commands</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Syntax Tree & Semantic Entities Section -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">account_tree</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Extracted Semantic Entities &amp; Validation Matrix
+        </h2>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-medium">Ready for Commit (1 Course, 2 Deadlines)</span>
+</div>
+</div>
+<!-- 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Structured Course Entity -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl relative overflow-hidden flex flex-col justify-between h-full">
+<div class="flex flex-col gap-space-md">
+<!-- Header Tags -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-primary-container/25 text-primary font-label-sm text-label-sm font-semibold">
+                  THEORY
+                </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                  4.0 CREDITS
+                </span>
+</div>
+<span class="font-code-inline text-code-inline text-tertiary">NODE_ID #CS301-S6</span>
+</div>
+<!-- Title & Faculty -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+                CS301: Database Management Systems
+              </h3>
+<div class="flex items-center gap-space-xs text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<span class="font-body-md text-body-md">Prof. Aris Thorne</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline">Dept. of Computer Science</span>
+</div>
+</div>
+<!-- Marking Scheme Breakdown Matrix -->
+<div class="space-y-space-xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Evaluation Weight Breakdown</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  100% Validated
+                </span>
+</div>
+<!-- 4 Evaluation Component Pills -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-1">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CCA 1</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold mt-0.5">15%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Midsem</span>
+<span class="font-headline-md text-headline-md text-secondary font-semibold mt-0.5">30%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Summative</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CCA 2</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold mt-0.5">15%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Endsem</span>
+<span class="font-headline-md text-headline-md text-tertiary font-semibold mt-0.5">40%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Terminal</span>
+</div>
+</div>
+</div>
+<!-- Inferred Telemetry Target -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">target</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Target Metric: 9.0 (A+)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Required Run-Rate: ~86.5/100 aggregate</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                Active Forecaster Ready
+              </span>
+</div>
+</div>
+<!-- Bottom Micro-info -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Slot: Mon/Wed 10:30 AM (Room L-204)</span>
+<span class="text-primary font-medium cursor-pointer hover:underline">Edit Meta ↗</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Extracted Deliverables & Timelines -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<!-- Deliverable Item 1 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md hover:bg-surface-container transition-all flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container/30 text-tertiary-fixed font-label-sm text-label-sm font-semibold">
+                PROJECT ASSIGNMENT
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                15% WEIGHT
+              </span>
+</div>
+<span class="font-code-inline text-code-inline text-secondary font-bold">#CS301</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+              DBMS Schema &amp; Normalization Benchmark
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              3NF/BCNF decomposition documentation, SQL DDL scripts, and mock load profiling benchmarks.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span class="font-medium">Due Oct 28, 11:59 PM (in 6 days)</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check</span>
+<span>Sync to Google Calendar</span>
+</div>
+</div>
+</div>
+<!-- Deliverable Item 2 -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md hover:bg-surface-container transition-all flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-error-container/40 text-error font-label-sm text-label-sm font-semibold">
+                MAJOR EXAM
+              </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                30% WEIGHT
+              </span>
+</div>
+<span class="font-code-inline text-code-inline text-secondary font-bold">#CS301</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+              Midsem Theory Examination
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Covers Relational Algebra, SQL subqueries, Relational Calculus, and Index structures (B+ Trees).
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">event</span>
+<span class="font-medium">Nov 14, 09:00 AM – 11:00 AM</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">notifications_active</span>
+<span>Reminder: 48h prior</span>
+</div>
+</div>
+</div>
+<!-- Parsed Syntax Diagnostic Mini-card -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+</div>
+<span class="font-label-sm text-label-sm">
+              Extracted 2 timeline vectors. No overlap detected in personal academic calendar.
+            </span>
+</div>
+<span class="font-code-inline text-code-inline text-outline">ST-PARSER:OK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Commit & Database Control Footer Bar -->
+<div class="sticky bottom-4 z-30 rounded-xl bg-surface-container-low/95 backdrop-blur-md p-space-md shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">database</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Target Academic Cluster</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semester 6 CSE • 4 Active Modules • 14 Pending Deadlines</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error font-body-md text-body-md transition-colors" type="button">
+        Discard &amp; Reset
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2 rounded-lg bg-gradient-to-r from-primary-container via-primary to-tertiary text-on-primary font-body-md text-body-md font-semibold shadow-[0_0_24px_rgba(128,131,255,0.45)] hover:shadow-[0_0_32px_rgba(128,131,255,0.7)] hover:scale-[1.02] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_done</span>
+<span>Commit to SemTrack Database</span>
+</button>
+</div>
+</div>
+</div></main></div></body></html>

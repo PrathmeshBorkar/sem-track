@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#d0bcff", "on-background": "#dae2fd", "tertiary-fixed-dim": "#4cd7f6", "tertiary-fixed": "#acedff", "on-primary-fixed": "#07006c", "surface-variant": "#2d3449", "inverse-surface": "#dae2fd", "primary-fixed": "#e1e0ff", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#d0bcff", "surface-container-low": "#131b2e", "surface-bright": "#31394d", "surface-container-highest": "#2d3449", "primary-container": "#8083ff", "outline-variant": "#464554", "on-tertiary": "#003640", "secondary-fixed": "#e9ddff", "on-secondary-fixed": "#23005c", "surface": "#0b1326", "on-error": "#690005", "surface-dim": "#0b1326", "primary": "#c0c1ff", "secondary-container": "#571bc1", "on-secondary-fixed-variant": "#5516be", "on-tertiary-fixed-variant": "#004e5c", "tertiary": "#4cd7f6", "on-primary-container": "#0d0096", "error": "#ffb4ab", "surface-tint": "#c0c1ff", "outline": "#908fa0", "on-error-container": "#ffdad6", "background": "#0b1326", "surface-container-high": "#222a3d", "inverse-primary": "#494bd6", "error-container": "#93000a", "primary-fixed-dim": "#c0c1ff", "on-surface": "#dae2fd", "on-tertiary-fixed": "#001f26", "on-secondary": "#3c0091", "surface-container": "#171f33", "surface-container-lowest": "#060e20", "on-primary-fixed-variant": "#2f2ebe", "on-secondary-container": "#c4abff", "tertiary-container": "#009eb9", "inverse-on-surface": "#283044", "on-tertiary-container": "#002f38", "on-primary": "#1000a9" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-md": "0.75rem", "margin-desktop": "2rem" }, fontFamily: { "label-sm": ["JetBrains Mono"], "display-lg": ["Geist"], "headline-md": ["Geist"], "body-md": ["Geist"], "code-inline": ["JetBrains Mono"], "body-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "label-md": ["JetBrains Mono"], "headline-lg": ["Geist"], "display-lg-mobile": ["Geist"] }, fontSize: { "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "400" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.015em", fontWeight: "500" }], "body-md": ["13px", { lineHeight: "19px", letterSpacing: "0em", fontWeight: "400" }], "code-inline": ["12px", { lineHeight: "16px", letterSpacing: "0em", fontWeight: "400" }], "body-lg": ["15px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "display-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface/85 backdrop-blur-xl border-b border-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="w-full h-16 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="SemTrack Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WBOpXQE8k2eTEVbFS1tcnZPpFTdCzQ8_NC7oXAqqOoIXytnaTXR1R-fSnSaC3AlANsSpEXvueCnBg_qO0YcsdQUO3Bjxhr2nBo2Jx9p22TGUOLnMvj1hqM7RUZtD6dGgZRSngzt4x1r9nBPZ_LpbO1bVjyJOahB5pwyNf8XPseYjTNTKK5-jRA8gYF4q26dm93DvVL9o5XvYMg9hN8tAbBjjdD3bCgAI_Ku6k8JB2npVjZSWLOqUeQc-U"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">SemTrack</span></div><div class="hidden sm:flex items-center px-space-xs py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm border border-outline-variant/40"><span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-1.5 animate-pulse"></span>OS v2.4</div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest/80 border border-surface-variant" data-active-classes="bg-surface-container-high text-primary font-body-md text-body-md shadow-inner shadow-primary-container/20"><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="subjects" href="#">Subjects</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines" href="#">Deadlines</a><a class="px-space-md py-1.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="smart-add" href="#">Smart Add</a></nav><div class="flex items-center gap-space-sm"><button class="group relative hidden sm:flex items-center gap-space-xs h-8 px-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-body-md text-body-md font-medium shadow-[0_0_16px_rgba(128,131,255,0.35)] hover:shadow-[0_0_24px_rgba(128,131,255,0.55)] transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Add</span><kbd class="ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/40 text-on-surface font-label-sm text-label-sm border border-outline-variant/40">⌘K</kbd></button><button class="relative flex items-center justify-center w-8 h-8 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs py-1 pr-space-md rounded-full bg-surface-container border border-surface-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-5ApA5KW5pyr2I01_oTBa52M2O-B5nAVJnFq3cRQdB2BPzukUaBw4C_XS9xDrMbSP8y7oNZ-hrQvLNpJ3c3TPsuPiQA0slISBS-UYmg4arVPIDhPv1X5IaBkqjIWoguljfoY0ZHEhXr0B0rtcRQoItRNXnxHEj6do9sx14ca35U1boxsaDDMlKJvKXY30OG0eENyUR_bUjxz8c6GBS0bpc6yVUhwRCOXJr-Vy57V95f_W5d8Z7e4DAg"/><div class="hidden md:flex flex-col text-left"><span class="font-body-md text-body-md leading-none text-on-surface">Kaelen Vance</span><span class="font-label-sm text-label-sm leading-none text-secondary mt-1">Sem 5 • CSE</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-surface-variant z-40 flex flex-col justify-between p-space-md"><div class="space-y-space-lg"><div><span class="px-space-sm font-label-sm text-label-sm tracking-wider uppercase text-outline">Academic Space</span><nav class="mt-space-sm space-y-1" data-active-classes="bg-surface-container-high text-primary font-medium"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="subjects" href="#"><span class="material-symbols-outlined text-[18px]">auto_stories</span><span class="font-body-md text-body-md">Course Matrix</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines" href="#"><span class="material-symbols-outlined text-[18px]">timer</span><span class="font-body-md text-body-md">Deadlines &amp; Exams</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="smart-add" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-body-md text-body-md">Syllabus Parser</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="gpa-forecaster" href="#"><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md">GPA Forecaster</span></a></nav></div><div><span class="px-space-sm font-label-sm text-label-sm tracking-wider uppercase text-outline">Telemetry</span><div class="mt-space-sm p-space-sm rounded-xl bg-surface-container border border-surface-variant space-y-space-sm"><div class="flex justify-between items-center"><span class="font-label-sm text-label-sm text-on-surface-variant">Target CGPA</span><span class="font-label-sm text-label-sm text-tertiary font-bold">3.88 / 4.00</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-primary to-tertiary w-[92%]"></div></div><div class="flex justify-between items-center pt-1 font-label-sm text-label-sm text-outline"><span>Credits</span><span class="text-on-surface">94 / 130</span></div></div></div></div><div class="p-space-sm rounded-xl bg-surface-container/60 border border-surface-variant/80 flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Sync Engine</span></div><span class="font-label-sm text-label-sm text-primary">Online</span></div></aside><div class="pl-64"><main class="w-full pt-16 min-h-screen bg-surface px-gutter-desktop py-space-xl"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Top Academic Telemetry Breadcrumb / Header Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] text-tertiary">analytics</span>
+<span>Academic Telemetry Engine v2.4</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant font-medium">Semester 6 Intelligence Cluster</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-medium">Realtime Run-Rate Evaluator Active</span>
+</div>
+<span class="text-outline font-label-sm text-label-sm">• Sync refreshed 4m ago</span>
+</div>
+</div>
+<!-- Quick Telemetry Action Buttons -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs h-8 px-space-md rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-md text-body-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Export Transcript</span>
+</button>
+<button class="flex items-center gap-space-xs h-8 px-space-md rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-body-md text-body-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Recalculate Bounds</span>
+</button>
+</div>
+</div>
+<!-- Hero Grade Matrix (Split Card with Subtle Gradient Glow & Radial Telemetry) -->
+<div class="relative rounded-xl bg-surface-container-low shadow-xl overflow-hidden p-space-lg">
+<!-- Ambient glowing gradient backdrop -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-72 h-72 rounded-full bg-tertiary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Column: Circular SVG Gauge & Academic Stance -->
+<div class="lg:col-span-6 flex flex-col sm:flex-row items-center gap-space-lg sm:pr-space-lg sm:border-r sm:border-surface-variant/40">
+<!-- SVG Radial Score Ring -->
+<div class="relative flex items-center justify-center shrink-0 w-36 h-36">
+<svg class="w-36 h-36 -rotate-90" viewbox="0 0 140 140">
+<circle cx="70" cy="70" fill="none" r="58" stroke="#171f33" stroke-width="10"></circle>
+<!-- 8.72 / 10.00 = 87.2% -> Circumference = ~364.4 -> dashoffset = 364.4 * (1 - 0.872) = 46.6 -->
+<circle class="text-primary transition-all duration-1000" cx="70" cy="70" fill="none" r="58" stroke="currentColor" stroke-dasharray="364.4" stroke-dashoffset="46.6" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-tight">Active SGPA</span>
+<span class="font-display-lg text-display-lg text-on-surface leading-none tracking-tight font-semibold">8.72</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">/ 10.00 scale</span>
+</div>
+</div>
+<!-- Academic Telemetry Badges & Run-rate -->
+<div class="flex flex-col items-center sm:items-start space-y-space-xs text-center sm:text-left">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+              +0.15 vs baseline
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-medium">
+              Sem 6
+            </span>
+</div>
+<div class="pt-1">
+<div class="font-headline-md text-headline-md text-on-surface font-semibold flex items-center gap-1.5 justify-center sm:justify-start">
+<span>Dean's List Contender</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Top 3.4% Cohort percentile rank (Computer Science)</p>
+</div>
+<!-- Segmented Run-Rate Progress Bar -->
+<div class="w-full max-w-xs pt-1 space-y-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-outline">Graded Run-rate Weight</span>
+<span class="text-tertiary font-medium">78% evaluated</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high flex overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-tertiary" style="width: 78%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Quick Stats Matrix & What-If CTA -->
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Stat Box 1: Credits -->
+<div class="p-space-sm rounded-xl bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Credits</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<div class="mt-1 font-headline-lg text-headline-lg text-on-surface font-semibold">16<span class="text-outline text-headline-md font-normal">/22</span></div>
+<div class="mt-2 w-full h-1 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 72.7%"></div>
+</div>
+<div class="mt-1.5 font-label-sm text-label-sm text-secondary truncate">6 in flight</div>
+</div>
+<!-- Stat Box 2: Pending Assessments -->
+<div class="p-space-sm rounded-xl bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Pending</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+</div>
+<div class="mt-1 font-headline-lg text-headline-lg text-on-surface font-semibold">3</div>
+<div class="mt-2 w-full h-1 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 40%"></div>
+</div>
+<div class="mt-1.5 font-label-sm text-label-sm text-on-surface-variant truncate">2 High Weight</div>
+</div>
+<!-- Stat Box 3: Target Forecast -->
+<div class="p-space-sm rounded-xl bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Forecast</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">query_stats</span>
+</div>
+<div class="mt-1 font-headline-lg text-headline-lg text-tertiary font-semibold">8.95</div>
+<div class="mt-2 w-full h-1 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 89.5%"></div>
+</div>
+<div class="mt-1.5 font-label-sm text-label-sm text-on-surface-variant truncate">Max theoretical: 9.24</div>
+</div>
+</div>
+<!-- High Visibility Action CTA Button -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-1 p-space-sm rounded-xl bg-surface-container/40">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<span class="font-body-md text-body-md font-medium text-on-surface block">Dynamic Monte Carlo Estimator</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Simulate assessment scores &amp; grading curve drift</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-md py-2 rounded-lg bg-gradient-to-r from-primary-container to-secondary-container hover:opacity-95 text-on-primary font-body-md text-body-md font-medium flex items-center justify-center gap-space-xs shadow-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Simulate What-If GPA</span>
+<kbd class="ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/40 text-on-surface font-label-sm text-label-sm">⌘S</kbd>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Courses Matrix Section -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Active Courses Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Realtime weight distribution, ongoing component evaluations &amp; projected Grade Points</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Graded Component</span>
+<span class="flex items-center gap-1 ml-2"><span class="w-2 h-2 rounded-full bg-surface-variant"></span> Pending Weight</span>
+</div>
+</div>
+<!-- 3-Column Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Course Card 1 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container/20 text-primary font-label-sm text-label-sm font-medium">Theory • 4 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Core CS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-primary transition-colors">CS401: Distributed Systems</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Dr. Julian Sterling</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 75% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Score: 88.5%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-tertiary" style="width: 75%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">CCA: <span class="text-tertiary">14/15</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Midsem: <span class="text-tertiary">26/30</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-outline font-label-sm text-label-sm">Project: <span class="text-secondary">In Review</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">GP 9.0 (A+)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container/20 text-primary font-label-sm text-label-sm font-medium">Theory • 4 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Core CS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-primary transition-colors">CS402: Compiler Design</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Prof. Elena Rostova</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 82% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">Score: 91.2%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-tertiary to-primary" style="width: 82%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Quizzes: <span class="text-tertiary">15/15</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Midsem: <span class="text-tertiary">28/30</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Parser: <span class="text-tertiary">18/20</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary font-medium">GP 10.0 (O Grade)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-medium">Lab • 2 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Practical</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-tertiary transition-colors">CS403P: Cloud Infrastructure Lab</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Prof. Marcus Vance</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 65% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">Score: 94.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-tertiary" style="width: 65%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">K8s Cluster: <span class="text-tertiary">20/20</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">IaC Terraform: <span class="text-tertiary">18/20</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-tertiary font-medium">GP 10.0 (O Grade)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Course Card 4 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container/20 text-primary font-label-sm text-label-sm font-medium">Theory • 3 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Elective</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-primary transition-colors">CS404: Advanced Computer Networks</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Dr. Naomi Chen</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 60% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Score: 84.5%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-secondary" style="width: 60%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Wireshark CCA: <span class="text-tertiary">13/15</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Midsem: <span class="text-tertiary">24/30</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">GP 8.5 (A)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Course Card 5 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/30 text-secondary font-label-sm text-label-sm font-medium">Theory • 3 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Specialization</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-secondary transition-colors">CS405: Cryptography &amp; Protocols</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Prof. Zachary Thorne</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 70% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Score: 89.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary to-tertiary" style="width: 70%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">RSA Attack Lab: <span class="text-tertiary">19/20</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">CCA1: <span class="text-tertiary">14/15</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">GP 9.0 (A+)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Course Card 6 -->
+<div class="rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 p-space-md flex flex-col justify-between space-y-space-md group">
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-2">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-medium">Lab • 2 Credits</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-outline font-label-sm text-label-sm">Practical</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium group-hover:text-tertiary transition-colors">CS406P: Kernel Lab</h3>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md mt-1">
+<span class="material-symbols-outlined text-[15px] text-outline">account_circle</span>
+<span>Dr. Julian Sterling</span>
+</div>
+<!-- Progress and Grade Point Meter -->
+<div class="mt-space-md space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evaluation: 50% marked</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Score: 86.0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-secondary" style="width: 50%"></div>
+</div>
+</div>
+<!-- Component Breakdown Chips -->
+<div class="mt-space-md pt-space-xs flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Raft Consensus: <span class="text-tertiary">26/30</span></span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-outline font-label-sm text-label-sm">Peer Review: <span class="text-secondary">Pending</span></span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">GP 9.0 (A+)</span>
+</div>
+<a class="inline-flex items-center gap-1 font-body-md text-body-md text-primary hover:text-on-surface transition-colors" href="#">
+<span>Matrix</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Deliverables & Deadlines (Linear Chronology Section) -->
+<div class="rounded-xl bg-surface-container-low shadow-xl p-space-lg space-y-space-md">
+<!-- Header with Filter Tabs and Quick Action -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Timeline &amp; Critical Deadlines</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">5 Active</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Prioritized chronological queue sorted by weighted grade impact</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center p-0.5 rounded-lg bg-surface-container-lowest">
+<button class="px-space-sm py-1 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm font-medium" type="button">All (5)</button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">Due Today (1)</button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">This Week (2)</button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">Upcoming (2)</button>
+</div>
+<button class="flex items-center gap-1 h-7 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Task</span>
+</button>
+</div>
+</div>
+<!-- Linear Item Rows -->
+<div class="space-y-2">
+<!-- Item 1: Overdue -->
+<div class="p-space-md rounded-xl bg-surface-container/70 hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+              OVERDUE
+            </span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-surface hover:text-error transition-colors">Distributed Consensus Benchmark Report (CS401)</h4>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-medium">CS401: Distributed Systems</span>
+<span>• Weight: <strong class="text-on-surface">10% Course Total</strong></span>
+<span class="text-error">Due: Yesterday, 11:59 PM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" type="button">
+            View Guidelines
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-error-container/60 hover:bg-error-container text-on-error-container font-body-md text-body-md font-medium flex items-center gap-1 transition-colors" type="button">
+<span>Submit Late</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Due Today -->
+<div class="p-space-md rounded-xl bg-surface-container/70 hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              DUE TODAY
+            </span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-surface hover:text-secondary transition-colors">LLVM IR Optimization Pass &amp; Benchmark (CS402)</h4>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-medium">CS402: Compiler Design</span>
+<span>• Weight: <strong class="text-on-surface">15% Course Total</strong></span>
+<span class="text-secondary font-medium">Due: Today, 5:00 PM (4 hrs remaining)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" type="button">
+            Rubric
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-md text-body-md font-medium flex items-center gap-1 transition-colors" type="button">
+<span>Upload Artifact / ZIP</span>
+<span class="material-symbols-outlined text-[14px]">upload</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Due in 2 Days -->
+<div class="p-space-md rounded-xl bg-surface-container/40 hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-medium">
+              DUE IN 2 DAYS
+            </span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-surface">Terraform Multi-Region Kubernetes Deployment (CS403P)</h4>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary font-medium">CS403P: Cloud Infra Lab</span>
+<span>• Weight: <strong class="text-on-surface">20% Lab Viva</strong></span>
+<span>Due: Thursday, 11:59 PM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" type="button">
+            Self-Assessment
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md font-medium flex items-center gap-1 transition-colors" type="button">
+<span>Open Git Repo</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Upcoming 1 -->
+<div class="p-space-md rounded-xl bg-surface-container/40 hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium">
+              UPCOMING
+            </span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-surface">Zero-Knowledge SNARK Proof Implementation (CS405)</h4>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-medium">CS405: Cryptography</span>
+<span>• Weight: <strong class="text-on-surface">10% CCA2</strong></span>
+<span>Due: Nov 12, 11:59 PM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" type="button">
+            View Spec
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md font-medium flex items-center gap-1 transition-colors" type="button">
+<span>Colab Notebook</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Upcoming 2 -->
+<div class="p-space-md rounded-xl bg-surface-container/40 hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="pt-0.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium">
+              UPCOMING
+            </span>
+</div>
+<div>
+<h4 class="font-body-lg text-body-lg font-medium text-on-surface">Mid-Term Endsem Synthesis &amp; Review Test (CS404)</h4>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-medium">CS404: Advanced Networks</span>
+<span>• Weight: <strong class="text-on-surface">20% Evaluated</strong></span>
+<span>Due: Nov 18, 9:00 AM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" type="button">
+            Study Deck (PDF)
+          </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md font-medium flex items-center gap-1 transition-colors" type="button">
+<span>Practice Exam</span>
+<span class="material-symbols-outlined text-[14px]">quiz</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
